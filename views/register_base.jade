@@ -1,0 +1,26 @@
+h1 Register Account
+p.lead
+br
+form(role='form', action="/register",method="post", style='max-width:300px;margin:auto;text-align:center;')
+    if pageData && pageData.err
+        p.alert.alert-danger.alert-dismissible.fade.in(role="alert")
+            button.close(type="button" data-dismiss="alert" aria-label="Close")
+                span(aria-hidden="true")
+                    &times;
+            span #{pageData.err}
+    if pageData && pageData.msg
+        p.alert.alert-success.alert-dismissible.fade.in(role="alert")
+            button.close(type="button" data-dismiss="alert" aria-label="Close")
+                span(aria-hidden="true")
+                    &times;
+            span #{pageData.msg}
+    .form-group
+        input.form-control(type='text', name="username", placeholder='Enter Username')
+    .form-group
+        input.form-control(type='text', name="email", placeholder='Email Address')
+    .form-group
+        input.form-control(type='password', name="password", placeholder='Password')
+    button.btn.btn-default(type='submit') Submit
+    &nbsp;
+    a(href='/')
+        button.btn.btn-primary(type="button") Cancel

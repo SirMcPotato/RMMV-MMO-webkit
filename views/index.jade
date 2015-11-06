@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	if (!user)
+		.row
+			.col-md-4.col-md-offset-2
+				.well(style="text-align:center;")
+					include ./register_base.jade
+			.col-md-4
+				.well(style="text-align:center;")
+					include ./login_base.jade
+	if (user)
+		p You are currently logged in as #{user.username}
+		a(href="/logout") Logout
