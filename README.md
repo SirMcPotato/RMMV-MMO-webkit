@@ -12,5 +12,8 @@ MMORPG webkit for RPG Maker MV using NodeJS &amp; Socket.io
 then go to `localhost:3000`, and register your account.
 Once your account is activated (mail activation, check you spam folder), you can log-in and play the game.
 
+The client game files are in `/public/game`
+
+
 # Configuration:
 // TODO
