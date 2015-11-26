@@ -54,11 +54,11 @@ router.post('/register', function(req, res) {
                     }
                 });
             }
-
-            actUrl = 'http://www.vinxce.eu:3000/activate/'+actCode;
+            //TODO
+            actUrl = 'http://www.myserver.com:3000/activate/'+actCode;
 
             transporter.sendMail({
-                from: 'Vinxce <no-reply@vinxce.eu>',
+                from: 'Team <no-reply@myserver.com>',
                 to: req.body.email,
                 subject: "RPGMaker MV MMO",
                 text: "Hello "+req.body.username+' and welcome to RPGMaker MV MMO!\nYour account has been registrated, but you need to activate it by following this link :\n'+actUrl+'\n\nEnjoy!\n\t-- Vinxce',
