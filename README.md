@@ -1,7 +1,7 @@
 # RMMV-MMO-webkit
 MMORPG webkit for RPG Maker MV using NodeJS &amp; Socket.io
 
-# Project status : On Hold. (Edit: 26/12/16)
+# Project status : On Hold. *(Edit: 26/12/16)*
 This project haven't really been dropped, but just put aside for a few moment, because there's a lot of things to rethink in order to allow a true and smooth multiplayer support!
 One of the biggest challenge in this project is to build from scratch a brand-new online and in-browser game editor using maybe React or Angular technologies. Another challenge is to properly set up an optimised server/client communication protocol, and I need a bit more experience in this.
 
